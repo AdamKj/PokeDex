@@ -1,13 +1,15 @@
 import './App.css';
 import React from 'react';
-import {Pokemons} from './components/Pokemons';
+import {Pokemon} from './components/Pokemons';
+
 
 function App() {
   return (
     <div className = 'App'>
-      <Pokemons />
-      <h1>PokeDex</h1>
+      
+      <h1><b>PokeDex</b></h1>
       <div id = 'pokeContainer' className = "poke-container"></div>
+      <Pokemon />
     </div>
   );
 }
