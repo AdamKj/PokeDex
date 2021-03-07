@@ -59,8 +59,13 @@ const pokeContainer = document.getElementById('poke_container');
 
         pokemonEl.innerHTML = pokeInnerHTML;
 
-        pokeContainer.appendChild(pokemonEl);
+        if (pokeContainer) {
+            pokeContainer.appendChild(pokemonEl);
+        }
     }
-
     fetchPokemons();
+    
+    return (
+        <div></div>
+    )
 }    
