@@ -1,6 +1,7 @@
 import './Pokemons.css';
+import React from 'react';
 
-
+export const Pokemons = () => {
 const pokeContainer = document.getElementById('poke_container');
     const pokemonsNumber = 150;
     const colors = {
@@ -62,3 +63,4 @@ const pokeContainer = document.getElementById('poke_container');
     }
 
     fetchPokemons();
+}    
